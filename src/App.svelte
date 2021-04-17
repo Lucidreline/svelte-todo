@@ -1,3 +1,7 @@
+<script>
+  import Item from './Item.svelte'
+</script>
+
 <div id="body">
   <div id="to-do-list">
     <div id="list-header">
@@ -7,6 +11,8 @@
         <span>+</span>
       </div>
     </div>
+    <Item task="Learn Svelte" />
+    <Item task="Style this Task" />
   </div>
 </div>
 
@@ -40,8 +46,5 @@
     list-style: none;
     text-align: center;
     padding: 0.5rem 0;
-  }
-
-  #list-header-content span {
   }
 </style>
